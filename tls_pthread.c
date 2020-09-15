@@ -27,6 +27,7 @@ int main(int argc, char *argv[]) {
 
     pthread_t p1, p2;
     assign(arg);
+    printf("args   : %d\n", *loops);
     pthread_create(&p1, NULL, worker, NULL); 
     pthread_create(&p2, NULL, worker, NULL);
 
